@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>English Grammar Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="container">
+    <!-- Header -->
+    <header>
+      <div class="mainHeading">
+        <h1>English Grammar Quiz</h1>
+        <p class="subtitle">Test your grammar — multiple choice quiz</p>
+      </div>
+    </header>
+
+    <!-- START SCREEN -->
+    <section id="startScreen" class="start-container">
+      <h3 class="title"><span>Build Confidence with Every Question.</span> English Grammar</h3>
+
+      <p class="subtext">
+        Take a moment, breathe, and strengthen your English with a calm, focused quiz.
+      </p>
+
+      <button id="startBtn" class="start-btn">Start Quiz →</button>
+    </section>
+
+    <!-- QUIZ SCREEN (Hidden by default) -->
+    
+    <div class = "quiz-cont">
+      <section id="quiz" class="card" aria-live="polite" hidden>
+
+      <!-- Progress -->
+      <div id="progress" class="progress">
+        Question <span id="current">1</span> / <span id="total">5</span>
+      </div>
+
+      <!-- Question + Options -->
+      <div id="question-area">
+        <h2 id="question">Loading question...</h2>
+        <ul id="options" class="options" role="list"></ul>
+      </div>
+
+      <!-- Buttons -->
+      <div class="controls">
+        <button id="nextBtn" class="btn" disabled>Next</button>
+        <button id="restartBtn" class="btn secondary" hidden>Quit</button>
+      </div>
+
+      <!-- Result -->
+      <div id="result" class="result" hidden>
+        <p id="scoreText"></p>
+      </div>
+ 
+  </section>
+ </div>
+   <footer class="credit">Designed for learning — Akash</footer>
+</main>
+
+  
+    
+  <!-- JS FILE -->
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
